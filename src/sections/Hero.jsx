@@ -39,6 +39,24 @@ export const Hero = () => {
                         Software Engineer • University Student 
                     </span>
                 </div>
+                {/* Headline */}
+                <div>
+                    <h1>
+                        Crafting <span className ="text-primary glow-text">digital</span>
+                        <br/>
+                        experiences with 
+                        <br/>
+                        <span className="font-serif italic font-normal text-white">
+                            precision.
+                        </span>
+                    </h1>
+                    <p className="text-lg text-muted-foreground max-w-lg">
+                        Hi, I'm André Pelle Rashid – a software engineering student at Aarhus University.
+                        I’m a highly motivated and curious developer with a strong foundation in software architecture, 
+                        full-stack and embedded development, and I thrive on turning complex problems into structured,
+                        scalable solutions while continuously pushing myself to grow both technically and personally.
+                    </p>
+                </div>
             </div>
             {/* Right column - profile image */}
         </div>
