@@ -1,3 +1,6 @@
+import { Button } from "@/components/Button";
+import { ArrowRight } from "lucide-react";
+
 export const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Bg Image */}
@@ -40,8 +43,8 @@ export const Hero = () => {
                     </span>
                 </div>
                 {/* Headline */}
-                <div>
-                    <h1>
+                <div className="space-y-4">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                         Crafting <span className ="text-primary glow-text">digital</span>
                         <br/>
                         experiences with 
@@ -50,13 +53,23 @@ export const Hero = () => {
                             precision.
                         </span>
                     </h1>
-                    <p className="text-lg text-muted-foreground max-w-lg">
+                    <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                         Hi, I'm André Pelle Rashid – a software engineering student at Aarhus University.
                         I’m a highly motivated and curious developer with a strong foundation in software architecture, 
                         full-stack and embedded development, and I thrive on turning complex problems into structured,
                         scalable solutions while continuously pushing myself to grow both technically and personally.
                     </p>
                 </div>
+                {/* Call to Action (CTA) Buttons */}
+                <div>
+                    <Button size="lg">
+                        Contact Me <ArrowRight className="w-5 h-5"/>
+                    </Button>
+                    <button>
+
+                    </button>
+                </div>
+
             </div>
             {/* Right column - profile image */}
         </div>
