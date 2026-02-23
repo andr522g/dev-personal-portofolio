@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, } from "lucide-react";
 import { AnimatedBotderButton } from "../components/AnimatedBorderButton";
 
 export const Hero = () => {
@@ -72,6 +72,25 @@ export const Hero = () => {
               <AnimatedBotderButton />
 
             </div>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+              <span className="text-sm text-muted-foreground">Follow me: </span>
+              {[
+                {icon: Github, href: "https://github.com/andr522g"},
+                {icon: Linkedin, href: "https://www.linkedin.com/in/andré-rashid-96a894273"}
+              ].map((social, idx) => (
+                <a 
+                  key={idx} 
+                  href={social.href} 
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+                  {<social.icon className="w-5 h-5" />}
+                </a>               
+                
+              ))}
+            </div>
+
+
           </div>
           {/* Right column - profile image */}
         </div>
