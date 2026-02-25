@@ -50,7 +50,7 @@ export const Experience = () => {
     return (
     <section
       id="experience" 
-      className="py-32 relative overflow-hidden"
+      className="py-15 relative overflow-hidden"
     >
       <div
         className="absolute top-1/2 left-1/4 w-96
