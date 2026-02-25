@@ -96,10 +96,12 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBotderButton >
-                <Download className="w-5 h-5" />
+              <a href="/Andre_Pelle_Rashid_CV.pdf" download>
+                <AnimatedBotderButton >
+                  <Download className="w-5 h-5" />
                     Download CV
-              </AnimatedBotderButton>
+                </AnimatedBotderButton>
+              </a>
 
             </div>
 
