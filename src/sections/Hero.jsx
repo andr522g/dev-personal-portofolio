@@ -116,6 +116,7 @@ export const Hero = () => {
               ].map((social, idx) => (
                 <a 
                   key={idx} 
+                  target="_blank"
                   href={social.href} 
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
                   {<social.icon className="w-5 h-5" />}

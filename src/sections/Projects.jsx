@@ -178,7 +178,7 @@ export const Projects = () => {
         </div>
         {/* View ALL Call To Action */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <a href="https://github.com/andr522g">
+          <a href="https://github.com/andr522g" target="_blank">
             <AnimatedBotderButton>
               View All Projects
               <ArrowUpRight className="w-5 h-5" />          
