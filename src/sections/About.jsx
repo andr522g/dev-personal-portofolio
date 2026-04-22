@@ -1,4 +1,11 @@
-import { Code2, Users, Lightbulb, ShieldCheck, TrendingUp, Brain } from "lucide-react";
+import {
+  Code2,
+  Users,
+  Lightbulb,
+  ShieldCheck,
+  TrendingUp,
+  Brain,
+} from "lucide-react";
 
 export const highlights = [
   {
@@ -61,12 +68,13 @@ export const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineering student with a strong
-                interest in full-stack development and building systems that are
-                both scalable and meaningful. My curiosity drives me to
-                understand how things work beneath the surface, and I
-                continuously challenge myself to grow through hands-on projects
-                and real-world problem solving.
+                I'm an ambitious software engineering student at Aarhus
+                University, currently in my 5th semester. I have a strong
+                foundation in full-stack development and enjoy building
+                scalable, meaningful systems. I'm driven by curiosity and a
+                desire to understand how things work beneath the surface. What
+                drew me to software is the ability to turn ideas into real,
+                usable systems.
               </p>
 
               <p>
@@ -100,19 +108,20 @@ export const About = () => {
           {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="glass p-6 rounded-2xl animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
-                  <item.icon className="w-6 h-6 text-primary"/>
+                  <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <p className="text-sm text-muted-foreground">
+                  {item.description}
+                </p>
               </div>
             ))}
-
           </div>
         </div>
       </div>
